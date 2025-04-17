@@ -1,7 +1,6 @@
 
 import { UserNav } from "../user/UserNav";
 import { SidebarTrigger } from "@/components/ui/sidebar";
-import { MessageCircleQuestion } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { useIsMobile } from "@/hooks/use-mobile";
 
@@ -14,8 +13,11 @@ export function Header() {
         <div className="flex items-center gap-2">
           {!isMobile && <SidebarTrigger />}
           <div className="flex items-center gap-2">
-            <MessageCircleQuestion size={32} className="text-primary" />
-            <h1 className="text-xl font-semibold text-primary">Unobravo Support</h1>
+            <img 
+              src="/lovable-uploads/29757e5a-afb8-49a9-9593-dd42b0a13f4a.png" 
+              alt="Unobravo Logo" 
+              className="h-8 w-auto" 
+            />
           </div>
         </div>
         <div className="flex items-center gap-4">
