@@ -9,7 +9,6 @@ import NotFound from "./pages/NotFound";
 import ChatPage from "./pages/ChatPage";
 import CallRoomPage from "./pages/CallRoomPage";
 import KnowledgePage from "./pages/KnowledgePage";
-import CommunityPage from "./pages/CommunityPage";
 import TicketsPage from "./pages/TicketsPage";
 import BadgesPage from "./pages/BadgesPage";
 
@@ -26,7 +25,6 @@ const App = () => (
           <Route path="/chat" element={<ChatPage />} />
           <Route path="/call-room" element={<CallRoomPage />} />
           <Route path="/knowledge" element={<KnowledgePage />} />
-          <Route path="/community" element={<CommunityPage />} />
           <Route path="/tickets" element={<TicketsPage />} />
           <Route path="/badges" element={<BadgesPage />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}

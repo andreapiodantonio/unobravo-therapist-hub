@@ -1,12 +1,12 @@
 
-import {
-  Sidebar,
-  SidebarContent,
-  SidebarGroup,
-  SidebarGroupContent,
-  SidebarGroupLabel,
-  SidebarMenu,
-  SidebarMenuButton,
+import { 
+  Sidebar, 
+  SidebarContent, 
+  SidebarGroup, 
+  SidebarGroupContent, 
+  SidebarGroupLabel, 
+  SidebarMenu, 
+  SidebarMenuButton, 
   SidebarMenuItem,
 } from "@/components/ui/sidebar";
 import { useIsMobile } from "@/hooks/use-mobile";
@@ -15,7 +15,6 @@ import {
   MessageCircle, 
   Calendar, 
   BookOpen, 
-  Users, 
   Award, 
   Phone, 
   Ticket, 
@@ -53,11 +52,6 @@ export function AppSidebar() {
       path: "/knowledge",
     },
     {
-      title: "Community",
-      icon: Users,
-      path: "/community",
-    },
-    {
       title: "Support Tickets",
       icon: Ticket,
       path: "/tickets",
@@ -87,7 +81,7 @@ export function AppSidebar() {
           <SidebarGroupContent>
             <SidebarMenu>
               {mainItems.map((item) => (
-                <SidebarMenuItem key={item.title} active={isActive(item.path)}>
+                <SidebarMenuItem key={item.title}>
                   <SidebarMenuButton onClick={() => navigate(item.path)} asChild>
                     <div className="flex items-center gap-2 w-full">
                       <item.icon size={18} />
@@ -104,7 +98,7 @@ export function AppSidebar() {
           <SidebarGroupContent>
             <SidebarMenu>
               {resourcesItems.map((item) => (
-                <SidebarMenuItem key={item.title} active={isActive(item.path)}>
+                <SidebarMenuItem key={item.title}>
                   <SidebarMenuButton onClick={() => navigate(item.path)} asChild>
                     <div className="flex items-center gap-2 w-full">
                       <item.icon size={18} />

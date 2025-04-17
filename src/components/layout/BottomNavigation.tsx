@@ -1,7 +1,7 @@
 
 import { useIsMobile } from "@/hooks/use-mobile";
 import { useLocation, useNavigate } from "react-router-dom";
-import { Home, MessageCircle, Phone, BookOpen, Users } from "lucide-react";
+import { Home, MessageCircle, Phone, BookOpen } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 export function BottomNavigation() {
@@ -31,11 +31,6 @@ export function BottomNavigation() {
       label: "Knowledge",
       icon: BookOpen,
       path: "/knowledge",
-    },
-    {
-      label: "Community",
-      icon: Users,
-      path: "/community",
     },
   ];
 
